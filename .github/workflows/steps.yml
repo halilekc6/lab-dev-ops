@@ -8,10 +8,6 @@ jobs:
     steps:
       - name: Maak directory
         run: mkdir testmachine
-        
-      - name: Run a multi-line script
-        run: uname -a > testmachine/uname -a
-
                 
       - name: schrijf uname commando naar file 
         run: uname -a > testmachine/output.txt
